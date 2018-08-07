@@ -1,0 +1,43 @@
+
+html {
+  font-size: 16px;
+}
+
+
+body {
+
+}
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ }
+
+.top-menu {
+  background: #efefef;
+  padding: 7px;
+}
+
+.smaller-menu {
+  padding: 14px;
+}
+
+
+.image-thumbnails {
+  margin-left: 33%;
+}
+
+
+
+
+
+
+.signup-bar {
+  background: #053960;
+  padding: 17px;
+  color: #fff;
+}
+ span.terms {
+   padding: 15px;
+ }
