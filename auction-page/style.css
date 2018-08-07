@@ -3,6 +3,9 @@ html {
   font-size: 16px;
 }
 
+.testy {
+  padding-right: 11%;
+}
 
 body {
 
@@ -41,3 +44,14 @@ body {
  span.terms {
    padding: 15px;
  }
+
+/* Bidding table */
+
+.top-bid-row {
+  background: #efefef;
+  border: 1px solid #efefef;
+}
+
+.other-bid-rows {
+  border: 1px solid #efefef;
+}
