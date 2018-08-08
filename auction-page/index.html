@@ -6,54 +6,76 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- Bootstrap 4 -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <title>Auction Marketeer</title>
 </head>
 <body>
 
+<header>
   <div class="container">
     <div class="row">
       <div class="col-lg-4">
-        <button type="button" class="btn btn-primary">MY ACCOUNT</button>
-        <button type="button" class="btn btn-primary">LOGOUT</button>
+        <button type="button" class="btn btn-primary account-btn">MY ACCOUNT</button>
+        <button type="button" class="btn btn-primary logout-btn">LOGOUT</button>
       </div>
       <div class="col-lg-4">
         <img class="center-block" src="images/logo_header.jpg" class="img-fluid" alt="Responsive image">
       </div>
       <div class="col-lg-4">
-        <button type="button" class="btn btn-primary float-right">CLICK TO SEARCH</button>
+        <button type="button" class="btn btn-primary float-right search-btn"><i class="fas fa-search"></i>CLICK TO SEARCH<img id="chevron" src="images/chevron.png" alt="double-chevron"/></button>
       </div>
     </div>
   </div>
+</header>
 
-  <div class="container-fluid">
-    <div class="row top-menu">
-      <div class="col-lg-2"></div>
-      <div class="col-lg-8 text-center">
-          CALENDAR
-          DEPARTMENTS
-          VALUATION
-          BUYING
-          SELLING
-          PAY ONLINE
-          ABOUT
-          CONTACT US
-      </div>
-      <div class="col-lg-2"></div>
+<!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">CALENDAR</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">DEPARTMENTS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">VALUATIONS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">BUYING</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">SELLING</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">PAY ONLINE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">CONTACT US</a>
+        </li>
+      </ul>
     </div>
   </div>
+</nav>
 
-    <div class="container-fluid">
-      <div class="row smaller-menu">
-        <div class="col-lg-3"></div>
-        <div class="col-lg-6 text-center">
-          PREVIOUS LOT
-          BACK TO CATALOGUE
-          NEXT LOT
-        </div>
-        <div class="col-lg-3"></div>
-      </div>
-    </div>
+<!-- Lower Navbar -->
+
+<nav class="navbar navbar-light lower-navigation">
+  <a href="#">PREVIOUS LOT</a>
+  <a href="#">BACK TO CATALOGUE</a>
+  <a href="#">NEXT LOT</a>
+</nav>
+
 
     <!-- Main content -->
 
@@ -67,25 +89,25 @@
           <img src="images/lot_image_thumbnail.jpg" class="img-responsive" alt="Responsive image">
         </div>
 
-          <p class="text-center">HOVER TO ZOOM IN</p>
-          <p class="text-center">CLICK TO VIEW ENLARGED IMAGE</p>
+          <p class="text-center hoverText">HOVER TO ZOOM IN</p>
+          <p class="text-center smallGreyText">CLICK TO VIEW ENLARGED IMAGE</p>
 
         </div>
 
         <div class="col-lg-6">
-          <p>Lot #1</p>
-          <p>An early 20th century 15ct gold demantoid garnet, amethyst and split pearl pendant, with chain.</p>
-          <h3>£120.00 - £180.00</h3>
+          <p class="smallGreyText">Lot #1</p>
+          <p id="productDescription">An early 20th century 15ct gold demantoid garnet, amethyst and split pearl pendant, with chain.</p>
+          <h5>£120.00 - £180.00</h5>
 
           <div class="row">
             <div class="col-lg-6">
-                <h3>Current Bid:</h3>
-                <h3>£560</h3>
+                <h5>Current Bid:</h5>
+                <h5 class="bidPrice">£560</h5>
             </div>
 
             <div class="col-lg-6">
-                <h3>Max Bid:</h3>
-                <h3>£560</h3>
+                <h5>Max Bid:</h5>
+                <h5 class="bidPrice">£560</h5>
             </div>
           </div>
 
@@ -95,17 +117,17 @@
             </div>
             <div class="col-lg-6">
               <div class="form-group">
-                <input type="text" class="form-control" id="usr">
+                <input type="text" class="form-control smallGreyText" id="usr" placeholder="Your Bid Amount...">
               </div>
             </div>
             <div class="col-lg-3">
-              <button type="button" class="btn btn-primary">BID NOW</button>
+              <button type="button" class="btn btn-primary BidButton">BID NOW</button>
             </div>
           </div>
 
           <!-- Bidding table -->
 
-            <div class="row top-bid-row">
+            <div class="row top-bid-row bidText">
               <div class="col-lg-3">
                 <p>Remaining</p>
               </div>
@@ -120,7 +142,7 @@
               </div>
             </div>
 
-            <div class="row other-bid-rows">
+            <div class="row other-bid-rows bidText">
               <div class="col-lg-3">
                 <p>Bidders</p>
               </div>
@@ -135,24 +157,24 @@
               </div>
             </div>
 
-            <div class="row other-bid-rows">
-              <div class="col-lg-6">
-                <p>Viewing Bidding History:</p>
-                <p>View All Bids</p>
+            <div class="row other-bid-rows bottomBidRow">
+              <div class="col-lg-5">
+                <p class="bidText">Viewing Bidding History:</p>
+                <p id="viewBids">View All Bids</p>
               </div>
-              <div class="col-lg-2">
+              <div class="col-lg-3 bidNumbers">
                 <p>£4500</p>
                 <p>£3100</p>
                 <p>£2900</p>
                 <p>£2500</p>
               </div>
-              <div class="col-lg-2">
+              <div class="col-lg-2 bidText">
                 <p>123450</p>
                 <p>123450</p>
                 <p>123450</p>
                 <p>123450</p>
               </div>
-              <div class="col-lg-2">
+              <div class="col-lg-2 bidNumbers">
                 <p class="text-right">4m</p>
                 <p class="text-right">12m</p>
                 <p class="text-right">25m</p>
@@ -162,15 +184,13 @@
 
 
 
-          <div class="row">
+          <div class="row bottomButtons">
+            <div class="col-lg-4"></div>
             <div class="col-lg-4">
-
+              <button type="button" class="btn btn-primary wishlist">ADD TO WISHLIST</button>
             </div>
             <div class="col-lg-4">
-              <button type="button" class="btn btn-primary float-right">ADD TO WISHLIST</button>
-            </div>
-            <div class="col-lg-4">
-              <button type="button" class="btn btn-primary float-right">CONDITION REPORT</button>
+              <button type="button" class="btn btn-primary condition">CONDITION REPORT</button>
             </div>
           </div>
 
@@ -178,37 +198,30 @@
     </div>
   </div>
 
+<!-- Footer -->
 
-
-
-
-
-
-
-
+<footer>
   <div class="container-fluid signup-bar">
     <div class="container">
       <div class="row">
         <div class="col-lg-7">
             Signup to receive regular auction alerts on the items that interest you:
         </div>
-        <div class="col-lg-3">
-            <p>Email address</p>
-        </div>
-        <div class="col-lg-2">
-            <p class="text-right">SUBMIT</p>
+        <div class="col-lg-5">
+            <p id="emailText">Email address<span class="float-right submitText">SUBMIT</span></p>
+            <hr>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="container">
+  <div class="container bottomFooter">
     <div class="row">
 
         <div class="col-lg-6">
-          <img src="images/logo_footer.jpg" class="img-fluid" alt="Responsive image">
-          <p>Telephone: 01234 567890</p>
-          <p>Email: info@auctionmarketeer.com</p>
+          <img src="images/logo_footer.jpg" class="img-fluid bottomLogo" alt="Responsive image"></br>
+          <span class="smallGreyText">Telephone: 01234 567890</span></br>
+          <span class="smallGreyText">Email: info@auctionmarketeer.com</span>
         </div>
 
         <div class="col-lg-6">
@@ -220,16 +233,11 @@
             <a href="#"><img src="images/icon_linked-in.jpg" alt="Linkedin"/></a>
           </div>
           <div class="clearfix"></div>
-          <p class="float-right"><span class="terms">Terms & Conditions</span> <span class="terms">Privacy Policy</span> Cookies</p>
+          <p class="smallGreyText float-right"><span class="terms">Terms & Conditions</span> <span class="terms">Privacy Policy</span> Cookies</p>
         </div>
     </div>
   </div>
-
-
-
-
-
-
+</footer>
 
 <script src="app.js"></script>
 </body>

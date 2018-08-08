@@ -8,8 +8,153 @@ html {
 }
 
 body {
-
+  color: #4d4d4d;
 }
+
+header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* header buttons */
+
+.account-btn {
+  background: #efefef;
+  border-radius: 0px;
+  border: none;
+  color: #053960;
+  margin-right: 8px;
+  /* width: 38%; */
+}
+
+.logout-btn {
+  background: #053960;
+  border-radius: 0px;
+  border: none;
+  /* width: 33%; */
+}
+
+.search-btn {
+  border-radius: 0px;
+  border: none;
+  background: #efefef;
+  color: #053960;
+}
+
+.fas.fa-search {
+  padding-right: 6px;
+}
+
+#chevron {
+  margin-top: -3px;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  float: none;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+.navbar-nav {
+    float:none;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+}
+
+.navbar-nav > li {
+    display: inline-block;
+    float:none;
+    padding-left: 19px;
+    margin-top: -10px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #4d4d4d;
+}
+
+.bg-light {
+  height: 38px;
+}
+
+/* Lower Navigation Bar */
+
+.lower-navigation {
+  padding-top: 15px;
+}
+
+.lower-navigation a {
+  color: #4d4d4d;
+  font-size: 0.85rem;
+  padding-left: 47px;
+}
+
+/* Content */
+
+.smallGreyText {
+  font-size: 0.85rem;
+  color: #4d4d4d;
+}
+
+.hoverText {
+  font-size: 0.85rem;
+  color: #4d4d4d;
+  margin-bottom: 0px;
+}
+
+#productDescription {
+  font-size: 0.73rem;
+  color: #4d4d4d;
+}
+
+h5 {
+  color: #4d4d4d;
+  font-weight: bold;
+}
+
+h5.bidPrice {
+  color: #4d4d4d;
+  font-weight: normal;
+}
+
+.BidButton {
+  background: #99cc00;
+  border-radius: 0px;
+  border: none;
+  padding-left: 21px;
+  padding-right: 21px;
+}
+
+.form-control {
+  border-radius: 0px;
+  width: 132%;
+  margin-left: -20%;
+}
+
+.wishlist {
+  background: #ffffff;
+  color: #053960;
+  border-radius: 0px;
+  border: 1px solid #053960;
+}
+
+.condition {
+  background: #ffffff;
+  color: #4d4d4d;
+  border-radius: 0px;
+  border: 1px solid #4d4d4d;
+}
+
+.bottomButtons {
+  margin-bottom: 100px;
+}
+
+
+
+
 
 .center-block {
   display: block;
@@ -26,32 +171,95 @@ body {
   padding: 14px;
 }
 
+/* Images */
 
 .image-thumbnails {
-  margin-left: 33%;
+  margin-left: 38%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
-
-
-
-
-
-
-.signup-bar {
-  background: #053960;
-  padding: 17px;
-  color: #fff;
-}
- span.terms {
-   padding: 15px;
- }
 
 /* Bidding table */
 
 .top-bid-row {
   background: #efefef;
   border: 1px solid #efefef;
+  padding-top: 2%
+}
+
+.top-bid-row p {
+  margin-bottom: 3px;
 }
 
 .other-bid-rows {
   border: 1px solid #efefef;
+  padding-top: 2%;
 }
+
+.other-bid-rows p {
+  margin-bottom: 3px;
+}
+
+.bidText {
+  font-size: 0.85rem;
+  color: #4d4d4d;
+  font-weight: 600;
+}
+
+.bidNumbers {
+  font-size: 0.85rem;
+  color: #4d4d4d;
+  font-weight: bold;
+}
+
+.bottomBidRow {
+  margin-bottom: 2%;
+}
+
+#viewBids {
+  color: #053960;
+  font-weight: bold;
+}
+
+/* Footer */
+
+.signup-bar {
+  background: #053960;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+}
+ span.terms {
+   padding: 15px;
+ }
+
+ #emailText {
+   font-style: italic;
+ }
+
+ .submitText {
+   font-style: normal;
+ }
+
+ hr {
+   border-bottom: 1px solid #ffffff;
+   margin-top: 0px;
+   margin-bottom: 0px;
+ }
+
+ .bottomFooter {
+   margin-top: 2%;
+   margin-bottom: 2%;
+ }
+
+ .bottomLogo {
+   margin-bottom: 1%;
+ }
+
+ .contact {
+   margin-bottom: 5%;
+ }
+
+ .contact a {
+   padding-left: 12px;
+ }
