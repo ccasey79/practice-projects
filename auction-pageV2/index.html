@@ -9,12 +9,14 @@
 </head>
 <body>
   <header>
-    <div class="wrapper">
+    <div class="wrapper topHeader">
       <button id="accountBtn">My Account</button>
       <button id="logoutBtn">Logout</button>
-      <img src="images/logo_header.jpg"/>
+      <img src="images/logo_header.jpg" alt="Auction Marketer" class="headerLogo"/>
       <button id="searchBtn">Click to Search</button>
     </div>
+
+    <!-- Main menu -->
 
     <ul class="main-menu">
       <li><a href="#"></a>Calendar</li>
@@ -26,6 +28,8 @@
       <li><a href="#"></a>About</li>
       <li><a href="#"></a>Contact Us</li>
     </ul> 
+
+    <!-- Lower Menu -->
 
     <ul class="lower-menu">
         <li><a href="#"></a>Previous Lot</li>
@@ -46,27 +50,29 @@
 
         </div>
         <div class="column second-half">
-          <p>Lot #1</p>
-          <p>An early 20th century 15ct gold demantoid garnet, amethyst and split pearl pendant, with chain.</p>
-          <h4>£120.00 - £180.00</h4>
-            <div class="row">
+          <p class="smallGreyText">Lot #1</p>
+          <p class="smallGreyText">An early 20th century 15ct gold demantoid garnet, amethyst and split pearl pendant, with chain.</p>
+          <h3>£120.00 - £180.00</h3>
+            <div class="row actualBids">
                 <div class="mini-column">
-                    <h4>Current Bid:</h4>
-                    <h4>£560</h4>
+                    <h3>Current Bid:</h3>
+                    <h3>£560</h3>
                 </div>
                 <div class="mini-column">
-                    <h4>Max Bid:</h4>
-                    <h4>£560</h4>
+                    <h3>Max Bid:</h3>
+                    <h3>£560</h3>
                 </div>
                 <div class="column"></div>
             </div>   
           <span>Bid Now</span> 
           <input id="bidInput" type="email" name="emailaddress" placeholder="Your Bid Amount...">
           <button id="bidButton" type="button">Bid Now</button>
+          
+          <!-- Bidding table -->
 
-          <table>
+          <table class="bidTable">
               <thead>
-                <tr>
+                <tr class="smallGreyText">
                   <th>Remaining</th>
                   <th>20d 6:23:45</th>
                   <th>Next Min Bid</th>
@@ -74,39 +80,38 @@
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>Bidders</td>
+                <tr class="smallGreyText">
+                  <td class="smallGreyText">Bidders</td>
                   <td>4</td>
                   <td>Bids</td>
                   <td>3</td>
                 </tr>
                 <tr>
-                  <td>Recent Bidding History</td>
+                  <td class="smallGreyText">Recent Bidding History</td>
                   <td>£4500</td>
-                  <td>123450</td>
+                  <td class="smallGreyText">123450</td>
                   <td>4m</td>
                 </tr>
                 <tr>
-                  <td>View All Bids</td>
+                  <td id="viewBid">View All Bids</td>
                   <td>£3100</td>
-                  <td>123450</td>
+                  <td class="smallGreyText">123450</td>
                   <td>12m</td>
                 </tr>
                 <tr>
                   <td></td>
                   <td>£2900</td>
-                  <td>123450</td>
+                  <td class="smallGreyText">123450</td>
                   <td>25m</td>
                 </tr>
                 <tr>
                   <td></td>
                   <td>£2500</td>
-                  <td>123450</td>
+                  <td class="smallGreyText">123450</td>
                   <td>47m</td>
                 </tr>
               </tbody>
             </table>
-
 
 
           <div class="secondHalfButtons">
@@ -120,34 +125,41 @@
   </section>
 
   <footer>
+
+    <!-- Sign up via email -->
+
     <section class="signup">
-      <div class="wrapper">
-        <span id="signupText">Signup to receive regular auction on the items that interest you:</span>
+      <div class="wrapper signWrapper">
+        <span>Signup to receive regular auction on the items that interest you:</span>
           <input type="email" name="emailaddress" placeholder="Email Address">
-          <input type="submit">
+          <button type="button">Submit</button>
       </div>
     </section>
+
+    <!-- Contact Information -->
+
     <section class="contactInfo">
       <div class="wrapper">
         <div class="row">
           <div class="column first-half-footer">
               <img src="images/logo_footer.jpg"/>
               <ul class="contactList">
-                <li>Telephone: 01234 567890</li>
-                <li>Email: info@auctionmarketer.com</li>
+                <li class="smallGreyText">Telephone: 01234 567890</li>
+                <li class="smallGreyText">Email: info@auctionmarketer.com</li>
               </ul>
           </div>
-          <div class="column second-half-footer"
+          <div class="column second-half-footer">
+            <div class="socialIcons">
               <img src="images/icon_email.jpg"/>
               <img src="images/icon_twitter.jpg"/>
               <img src="images/icon_facebook.jpg"/>
               <img src="images/icon_pinterest.jpg"/>
               <img src="images/icon_linked-in.jpg"/>
-          
+            </div>  
               <ul class="footerInfo">
-                <li><a href="#"></a>Terms & Conditions</li>
-                <li><a href="#"></a>Privacy Policy</li>
-                <li><a href="#"></a>Cookies</li>
+                <li class="smallGreyText"><a href="#"></a>Terms & Conditions</li>
+                <li class="smallGreyText"><a href="#"></a>Privacy Policy</li>
+                <li class="smallGreyText"><a href="#"></a>Cookies</li>
               </ul>
           </div>
         </div>

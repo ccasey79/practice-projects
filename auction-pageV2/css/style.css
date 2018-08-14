@@ -1,45 +1,104 @@
 
 html {
   font-size: 16px;
+  font-family: sans-serif;
 }
 
 body {
   background: #b3d9ff;
 }
 
-h4 {
+h3, h4 {
   padding: 0;
   margin: 0; 
 }
 
 .wrapper {
   max-width: 960px;
-  background: pink;
+  background: #ffffff;
   margin: 0 auto;
 }
 
+/* Header */
+
 .main-menu {
   list-style-type: none;
-  background: yellow;
+  background: #efefef;
   margin: 0;
-  padding: 0;
-  text-align: center
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 1%; 
+  text-transform: uppercase;
+  color: #4d4d4d;
 }
 
 .main-menu li {
   display: inline;
+  padding-left: 8px;
 }
 
 .lower-menu {
   list-style-type: none;
-  background: green;
+  background: #ffffff;
   margin: 0;
-  padding: 0;
+  padding: 10px;
   text-align: center;
+  text-transform: uppercase;
+  color: #4d4d4d;
+  font-size: 0.85rem;
 }
 
 .lower-menu li {
   display: inline;
+}
+
+.topHeader {
+  padding: 30px 10px;
+}
+
+#accountBtn {
+  background: #efefef;
+  color: #053960;
+  text-transform: uppercase;
+  width: 10%;
+  padding: 8px;
+  border: none;
+  float: left;
+  margin-right: 1%;
+}
+
+#logoutBtn {
+  background: #053960;
+  color: #ffffff;
+  text-transform: uppercase;
+  width: 10%;
+  padding: 8px;
+  border: none;
+  float: left;
+}
+
+#searchBtn {
+  background: #efefef;
+  color: #053960;
+  text-transform: uppercase;
+  width: 20%;
+  padding: 8px;
+  float: right;
+  border: none;
+}
+
+.headerLogo {
+  max-width: 40%;
+  margin-left: 10%;
+}
+
+.smallGreyText {
+  font-size: 0.85rem;
+  color: #4d4d4d;
+}
+
+.contactList li:first-child {
+  margin-bottom: 3px;
 }
 
 /* Content */
@@ -61,21 +120,88 @@ h4 {
   clear: both;
 }
 
-
-
 .imageControl {
   text-align: center;
   text-transform: uppercase;
   font-size: 0.75rem;
 }
 
+.second-half p:first-child {
+  margin-bottom: 4%;
+}
+
+.second-half p:nth-child(2) {
+  margin-bottom: 4%;
+}
+
+.second-half h3{
+  margin-bottom: 4%;
+}
+
+.actualBids {
+  margin-bottom: 6%;
+}
+
+#bidButton {
+  border: none;
+  border-radius: 0px;
+  background: #00cc00;
+  color: #ffffff;
+  padding: 3px 22px;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
 #bidInput {
-  width: 52%;
+  width: 57%;
+  height: 18px;
+}
+
+.second-half span {
+  margin-right: 4%;
 }
 
 .secondHalfButtons {
-  display: inline;
   float: right;
+  margin-top: 2%;
+  margin-bottom: 30%;
+}
+
+/* Bid Table */
+
+.bidTable {
+  margin-top: 3%;
+}
+
+thead {
+  background: #efefef;
+  text-align: left;
+}
+
+#viewBid {
+  color: #053960;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+/* Alternative buttons */
+
+#wishlist {
+  border: 1px solid #053960;
+  border-radius: 0px;
+  color: #053960;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  padding: 8px;
+}
+
+#condition {
+  border: 1px solid #4d4d4d;
+  border-radius: 0px;
+  color: #4d4d4d;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  padding: 8px;
 }
 
 
@@ -87,12 +213,68 @@ h4 {
 
 /* Footer */
 
-.signup {
-  background: white;
+.first-half-footer {
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
-#signupText {
-  background: lightcoral;
+.second-half-footer {
+  padding-top: 4%;
+  padding-bottom: 2%;
+}
+
+.signup {
+  background: #053960;
+  padding: 2%;
+}
+
+.signWrapper {
+  background: #053960;
+}
+
+.signup span {
+  background: #053960;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.signup button {
+  border-radius: 0px;
+  background: #053960;
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px; 
+  text-transform: uppercase;
+  font-size: 1rem;
+  float: right;
+}
+
+.signup input {
+  background: #053960;
+  border-bottom: 2px solid #ffffff;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px; 
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-style: italic;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+  font-style: italic;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+  font-style: italic;
+  color: #ffffff;
+  font-size: 1rem;
 }
 
 .contactInfo {
@@ -102,17 +284,32 @@ h4 {
 .contactList {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 .footerInfo {
   list-style-type: none;
-  padding: 0;
+
   margin: 0;
+  text-align: right;
+  clear: both;
 }
 
 .footerInfo li {
-  display: inline;
+  display: inline-block;
+  padding-left: 2%;
 }
+
+.socialIcons {
+  float: right;
+  padding-bottom: 1%; 
+}
+
+
+
+
+
+
 
 
 
