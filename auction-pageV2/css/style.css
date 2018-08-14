@@ -7,8 +7,13 @@ body {
   background: #b3d9ff;
 }
 
+h4 {
+  padding: 0;
+  margin: 0; 
+}
+
 .wrapper {
-  width: 960px;
+  max-width: 960px;
   background: pink;
   margin: 0 auto;
 }
@@ -16,11 +21,61 @@ body {
 .main-menu {
   list-style-type: none;
   background: yellow;
+  margin: 0;
+  padding: 0;
+  text-align: center
+}
+
+.main-menu li {
+  display: inline;
 }
 
 .lower-menu {
   list-style-type: none;
   background: green;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.lower-menu li {
+  display: inline;
+}
+
+/* Content */
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.mini-column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+
+.imageControl {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+#bidInput {
+  width: 52%;
+}
+
+.secondHalfButtons {
+  display: inline;
+  float: right;
 }
 
 
@@ -48,6 +103,18 @@ body {
   list-style-type: none;
   padding: 0;
 }
+
+.footerInfo {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerInfo li {
+  display: inline;
+}
+
+
 
 
 
