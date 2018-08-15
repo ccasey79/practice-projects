@@ -42,11 +42,13 @@
     <div class="wrapper">
       <div class="row">
         <div class="column first-half">
-          <img src="images/lot_image.jpg"/>
-          <img src="images/lot_image_thumbnail.jpg"/>
-          <img src="images/lot_image_thumbnail.jpg"/>
-          <p class="imageControl">Hover to zoom in</p>
-          <p class="imageControl">Click to view enlarged image</p>
+          <img src="images/lot_image.jpg" alt="pearl pendant with chain" id="largeImage"/>
+          <div class="smallImages">
+            <img src="images/lot_image_thumbnail.jpg"/>
+            <img src="images/lot_image_thumbnail.jpg"/>
+          </div>
+          <p>Hover to zoom in</p>
+          <p>Click to view enlarged image</p>
 
         </div>
         <div class="column second-half">
@@ -56,17 +58,29 @@
             <div class="row actualBids">
                 <div class="mini-column">
                     <h3>Current Bid:</h3>
-                    <h3>£560</h3>
+                    <p>£560</p>
                 </div>
                 <div class="mini-column">
                     <h3>Max Bid:</h3>
-                    <h3>£560</h3>
+                    <p>£560</p>
                 </div>
                 <div class="column"></div>
             </div>   
-          <span>Bid Now</span> 
-          <input id="bidInput" type="email" name="emailaddress" placeholder="Your Bid Amount...">
-          <button id="bidButton" type="button">Bid Now</button>
+          <!-- <span>Bid Now</span>  -->
+          
+          <div class="inputRow">
+            <div class="col-width16">
+              <label for="Bid Now">Bid Now</label>
+            </div>
+            <div class="col-width55">
+              <input type="text" id="lname" name="lastname" placeholder="Your Bid Amount..">
+            </div>
+            <div>
+              <input type="submit" value="Bid Now">
+            </div>
+          </div>
+
+
           
           <!-- Bidding table -->
 
@@ -81,34 +95,34 @@
               </thead>
               <tbody>
                 <tr class="smallGreyText">
-                  <td class="smallGreyText">Bidders</td>
+                  <td class="smallGreyText secondTableRow">Bidders</td>
                   <td>4</td>
                   <td>Bids</td>
                   <td>3</td>
                 </tr>
                 <tr>
                   <td class="smallGreyText">Recent Bidding History</td>
-                  <td>£4500</td>
+                  <td class="boldBidNumbers">£4500</td>
                   <td class="smallGreyText">123450</td>
-                  <td>4m</td>
+                  <td class="boldBidNumbers">4m</td>
                 </tr>
                 <tr>
                   <td id="viewBid">View All Bids</td>
-                  <td>£3100</td>
+                  <td class="boldBidNumbers">£3100</td>
                   <td class="smallGreyText">123450</td>
-                  <td>12m</td>
+                  <td class="boldBidNumbers">12m</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td>£2900</td>
+                  <td class="boldBidNumbers">£2900</td>
                   <td class="smallGreyText">123450</td>
-                  <td>25m</td>
+                  <td class="boldBidNumbers">25m</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td>£2500</td>
+                  <td class="boldBidNumbers">£2500</td>
                   <td class="smallGreyText">123450</td>
-                  <td>47m</td>
+                  <td class="boldBidNumbers">47m</td>
                 </tr>
               </tbody>
             </table>
@@ -129,10 +143,18 @@
     <!-- Sign up via email -->
 
     <section class="signup">
-      <div class="wrapper signWrapper">
-        <span>Signup to receive regular auction on the items that interest you:</span>
-          <input type="email" name="emailaddress" placeholder="Email Address">
-          <button type="button">Submit</button>
+      <div class="wrapper signWrapper">        
+          <div class="inputRow">
+              <div class="col-width53">
+                <label for="Signup">Signup to receive regular auction alerts on the items that interest you: </label>
+              </div>
+              <div class="col-width35">
+                <input type="text" id="emailInput" placeholder="Email Address">
+              </div>
+              <div class="">
+                <input id="submitButton" type="submit" value="Submit">
+              </div>
+          </div>
       </div>
     </section>
 
