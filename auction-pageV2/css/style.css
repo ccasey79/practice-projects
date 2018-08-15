@@ -134,16 +134,15 @@ h3, h4 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 70%;
   margin-bottom: 3%;
 }
 
 .smallImages {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 27%;
+  display: inline-block;
+  max-width: 100%;
   margin-bottom: 3%;
+  margin-left: 37%;
 }
 
 .first-half p {
@@ -282,7 +281,6 @@ thead {
   padding: 8px;
 }
 
-
 /* Footer */
 
 .first-half-footer {
@@ -401,8 +399,52 @@ thead {
   padding-right: 4%;
 }
 
+/* Media Queries */
 
+@media only screen and (max-width: 1006px) {
+  .signup label { font-size: 0.80rem; }
+}
 
+@media only screen and (max-width: 991px) {
+  .contactInfo { padding-left: 1%; padding-right: 1%; }
+}
+
+@media only screen and (max-width: 947px) {
+  #accountBtn { width: 13%; }
+  .socialIcons { width: 34%; }
+}
+
+@media only screen and (max-width: 809px) {
+  .main-menu { font-size: 0.85rem; }
+  .smallImages { margin-left: 33%; }
+}
+
+@media only screen and (max-width: 886px) {
+  .col-width55 { width: 53%; }
+  input[type=submit] { padding: 12px 25px; }
+}
+
+/* Tablets - IPad */
+@media only screen and (max-width: 768px) {
+  .headerLogo { margin-left: 8%; }
+  .lower-menu { font-size: 0.75rem; }
+  .first-half p { font-size: 0.65rem; }
+  .col-width55 { width: 49%; }
+  .col-width16 label { font-size: 0.85rem; }
+  .col-width53 { width: 57%; }
+  .col-width35 { width: 30%; }
+  input[type=submit] { font-size: 0.85rem; }
+  input::placeholder { font-size: 0.85rem; }
+  h3 { font-size: 1rem; }
+  #wishlist { font-size: 0.70rem; }
+  #condition { font-size: 0.70rem; }
+  #submitButton { font-size: 0.85rem; }
+  #emailInput { margin-top: 0%; }
+}
+
+@media only screen and (max-width: ) {
+   { }
+}
 
 
 
