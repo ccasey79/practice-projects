@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <title>Auction Marketer</title>
 </head>
@@ -13,21 +14,24 @@
       <button id="accountBtn">My Account</button>
       <button id="logoutBtn">Logout</button>
       <img src="images/logo_header.jpg" alt="Auction Marketer" class="headerLogo"/>
-      <button id="searchBtn">Click to Search</button>
+      <button id="searchBtn"><i class="fas fa-search"></i>Click to Search<i class="fas fa-chevron-right firstChevron"></i><i class="fas fa-chevron-right"></i></button>
     </div>
 
     <!-- Main menu -->
 
-    <ul class="main-menu">
-      <li><a href="#"></a>Calendar</li>
-      <li><a href="#"></a>Departments</li>
-      <li><a href="#"></a>Valuations</li>
-      <li><a href="#"></a>Buying</li>
-      <li><a href="#"></a>Selling</li>
-      <li><a href="#"></a>Pay Online</li>
-      <li><a href="#"></a>About</li>
-      <li><a href="#"></a>Contact Us</li>
-    </ul> 
+    <nav>
+      <a class="burger-nav"></a>
+      <ul class="main-menu">
+        <li><a href="#"></a>Calendar</li>
+        <li><a href="#"></a>Departments</li>
+        <li><a href="#"></a>Valuations</li>
+        <li><a href="#"></a>Buying</li>
+        <li><a href="#"></a>Selling</li>
+        <li><a href="#"></a>Pay Online</li>
+        <li><a href="#"></a>About</li>
+        <li><a href="#"></a>Contact Us</li>
+      </ul> 
+    </nav>
 
     <!-- Lower Menu -->
 
@@ -66,67 +70,65 @@
                 </div>
                 <div class="column"></div>
             </div>   
-          <!-- <span>Bid Now</span>  -->
           
           <div class="inputRow">
             <div class="col-width16">
               <label for="Bid Now">Bid Now</label>
             </div>
             <div class="col-width55">
-              <input type="text" id="lname" name="lastname" placeholder="Your Bid Amount..">
+              <input type="text" placeholder="Your Bid Amount..">
             </div>
             <div>
               <input type="submit" value="Bid Now">
             </div>
           </div>
-
-
-          
+        
           <!-- Bidding table -->
 
-          <table class="bidTable">
-              <thead>
-                <tr class="smallGreyText">
-                  <th>Remaining</th>
-                  <th>20d 6:23:45</th>
-                  <th>Next Min Bid</th>
-                  <th>£5000</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="smallGreyText">
-                  <td class="smallGreyText secondTableRow">Bidders</td>
-                  <td>4</td>
-                  <td>Bids</td>
-                  <td>3</td>
-                </tr>
-                <tr>
-                  <td class="smallGreyText">Recent Bidding History</td>
-                  <td class="boldBidNumbers">£4500</td>
-                  <td class="smallGreyText">123450</td>
-                  <td class="boldBidNumbers">4m</td>
-                </tr>
-                <tr>
-                  <td id="viewBid">View All Bids</td>
-                  <td class="boldBidNumbers">£3100</td>
-                  <td class="smallGreyText">123450</td>
-                  <td class="boldBidNumbers">12m</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td class="boldBidNumbers">£2900</td>
-                  <td class="smallGreyText">123450</td>
-                  <td class="boldBidNumbers">25m</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td class="boldBidNumbers">£2500</td>
-                  <td class="smallGreyText">123450</td>
-                  <td class="boldBidNumbers">47m</td>
-                </tr>
-              </tbody>
-            </table>
-
+          <div class="tableContainer">
+            <table class="bidTable">
+                <thead>
+                  <tr class="smallGreyText">
+                    <th>Remaining</th>
+                    <th>20d 6:23:45</th>
+                    <th>Next Min Bid</th>
+                    <th>£5000</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="smallGreyText">
+                    <td class="smallGreyText secondTableRow">Bidders</td>
+                    <td class="secondRowData">4</td>
+                    <td>Bids</td>
+                    <td class="secondRowData" id="numberRightAligned">3</td>
+                  </tr>
+                  <tr>
+                    <td class="smallGreyText">Recent Bidding History</td>
+                    <td class="boldBidNumbers">£4500</td>
+                    <td class="smallGreyText numbersCenter">123450</td>
+                    <td class="boldBidNumbers">4m</td>
+                  </tr>
+                  <tr>
+                    <td id="viewBid">View All Bids</td>
+                    <td class="boldBidNumbers">£3100</td>
+                    <td class="smallGreyText numbersCenter">123450</td>
+                    <td class="boldBidNumbers">12m</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td class="boldBidNumbers">£2900</td>
+                    <td class="smallGreyText numbersCenter">123450</td>
+                    <td class="boldBidNumbers">25m</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td class="boldBidNumbers">£2500</td>
+                    <td class="smallGreyText numbersCenter">123450</td>
+                    <td class="boldBidNumbers">47m</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
 
           <div class="secondHalfButtons">
             <button id="wishlist" type="button">Add To Wishlist</button>
@@ -148,6 +150,7 @@
               <div class="col-width53">
                 <label for="Signup">Signup to receive regular auction alerts on the items that interest you: </label>
               </div>
+
               <div class="col-width35">
                 <input type="text" id="emailInput" placeholder="Email Address">
               </div>
@@ -189,7 +192,7 @@
     </section>  
   </footer>
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="main.js"></script>  
 </body>
 </html>
