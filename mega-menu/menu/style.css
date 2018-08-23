@@ -1,0 +1,26 @@
+ * {
+   padding: 0;
+   margin: 0;
+ }
+
+ html {
+   font-size: 16px; 
+ }
+
+ nav {
+   width: 100%;
+   background: #330066;
+   padding: 1% 0;
+ }
+
+ nav ul li {
+  list-style-type: none;
+ }
+
+ .burger-nav {
+   cursor: pointer;
+   float: left;
+   margin-right: 2%;
+   margin-top: -1.3%;
+ }
+
