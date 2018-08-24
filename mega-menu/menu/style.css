@@ -5,11 +5,15 @@
 
  html {
    font-size: 16px; 
+   font-family: Arial, sans-serif;
+ }
+
+ header {
+   background: #330066;
  }
 
  nav {
    width: 100%;
-   background: #330066;
    padding: 1% 0;
    overflow: hidden;
  }
@@ -29,9 +33,8 @@
 
  .wrapper {
    width: 960px;
-   background: lightcoral;
    margin: 0 auto;
-   height: 350px;
+   height: 550px;
  }
 
  .wrapper ul {
@@ -44,25 +47,70 @@
 
  .icon {
    float: left;
-   margin-right: 5%;
-   margin-left: 2%;
+   margin: 3% 5% 0 2%;
  }
+
+ .fa-users {
+   color: #ffffff;
+   font-size: 25px;
+ }
+
+ .fa-handshake {
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.fa-user-md {
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.fa-pound-sign {
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.fa-newspaper {
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.fa-twitter {
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.fa-envelope {
+  color: #ffffff;
+  font-size: 25px;
+}
+
+ hr.divider {
+  border: 0;
+  height: 1px;
+  background: #f2f2f2;
+  box-shadow: 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
 
  .left-links {
    float: left;
-   width: 50%;
-   background: #4d4d4d;
+   width: 48%;
+   padding: 1%;
  }
 
  .right-links {
    float: right;
-   width: 50%;
-   background: #ccc;
+   width: 48%;
+   padding: 1%;
+ }
+
+ .right-links span {
+   margin-right: 3%;
  }
 
  .link-container {
    margin-top: 2%;
-   margin-bottom: 11%;
+   margin-bottom: 15%;
  }
 
  .link-container:after {
@@ -73,15 +121,36 @@
 
 .link-content {
   color: #ffffff;
-  margin-left: 11%;
+  font-size: 15px;
+  margin: 2% 0 2% 11%;
 }
 
-
-
+.link-content.grey {
+  color: #cccccc;
+  padding-bottom: 1%;
+}
 
 .button-container {
   text-align: center;
   padding-top: 2%;
+}
+
+.buttonLink {
+  padding: 10px;
+  font-size: 15px;
+  border: 2px solid #1a0033;
+}
+
+#aboutButton {
+  background: #330066;
+  color: #ffffff;
+  border-radius: 30px;
+}
+
+#servicesButton {
+  color: #ffffff;
+  background: #1a0033;
+  border-radius: 0px 30px 30px 0px;
 }
 
 .footer-container ul {
@@ -90,11 +159,13 @@
 
 .footer-container ul li {
   display: inline;
+  margin-left: 40px;
 }
 
 .footer-container ul li a {
   color: #ccc;
   font-size: 12px;
+  text-decoration: none;
 }
 
  
