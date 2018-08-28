@@ -24,10 +24,13 @@
 
     <div class="wrapper">
       <div class="button-container">
-        <button class="buttonLink" id="aboutButton">About Countrywide</button>
-        <button class="buttonLink" id="servicesButton">Services</button>
+        <button class="buttonLink" tabSelector="buttonOne" id="aboutButton">About Countrywide</button>
+        <button class="buttonLink" tabSelector="buttonTwo" id="servicesButton">Services</button>
       </div>
-        <div class="link-container">
+
+        <!-- About Countrywide tab -->
+
+        <div class="link-container current" id="tabOne">
           <div class="left-links">
             <ul>
               <li class="icon"><a href="#"><i class="fas fa-users"></i></a></li>
@@ -59,13 +62,13 @@
                 <li class="icon"><a href="#"><i class="fas fa-newspaper"></i></a></li>
                 <li class="link-content"><a href="#"></a>News and research</li>
                 <li class="link-content grey"><a href="#"></a>Latest news, press and research papers</li>
-                <hr class="divider">
+                <hr class="divider" id="dividerNews">
               </ul>
               <ul>
                 <li class="icon"><a href="#"><i class="fab fa-twitter"></i></a></li>
                 <li class="link-content"><a href="#"></a>Connect with us</li>
                 <li class="link-content grey"><a href="#"></a><span>Twitter</span><span>Facebook</span><span>Linkedin</span></li>
-                <hr class="divider">
+                <hr class="divider" id="dividerConnect">
               </ul>
               <ul>
                 <li class="icon"><a href="#"><i class="fas fa-envelope"></i></a></li>
@@ -74,6 +77,57 @@
               </ul>
           </div>
         </div> 
+
+        <!-- Services tab -->
+
+        <div class="link-container" id="tabTwo">
+            <div class="left-links">
+              <ul>
+                <li class="icon"><a href="#"><i class="fas fa-users"></i></a></li>
+                <li class="link-content"><a href="#"></a>Sales and Lettings</li>
+                <li class="link-content grey"><a href="#"></a>Via our network of local and national estate agencies</li>
+                <hr class="divider">
+              </ul>
+              <ul>
+                <li class="icon"><a href="#"><i class="far fa-handshake"></i></a></li>
+                <li class="link-content"><a href="#"></a>Sales and Lettings</li>
+                <li class="link-content grey"><a href="#"></a>Via our network of local and national estate agencies</li>
+                <hr class="divider">
+              </ul>
+                <ul>
+                <li class="icon"><a href="#"><i class="fas fa-user-md"></i></a></li>
+                <li class="link-content"><a href="#"></a>Sales and Lettings</li>
+                <li class="link-content grey"><a href="#"></a>VVia our network of local and national estate agencies</li>
+                <hr class="divider">
+              </ul>
+              <ul>
+                <li class="icon"><a href="#"><i class="fas fa-pound-sign"></i></a></li>
+                <li class="link-content"><a href="#"></a>Sales and Lettings</li>
+                <li class="link-content grey"><a href="#"></a>Via our network of local and national estate agencies</li>
+                <hr class="divider" id="dividerInvest">
+              </ul>
+            </div>  
+            <div class="right-links">
+                <ul>
+                  <li class="icon"><a href="#"><i class="fas fa-newspaper"></i></a></li>
+                  <li class="link-content"><a href="#"></a>Sales and Lettings</li>
+                  <li class="link-content grey"><a href="#"></a>Via our network of local and national estate agencies</li>
+                  <hr class="divider" id="dividerNews">
+                </ul>
+                <ul>
+                  <li class="icon"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li class="link-content"><a href="#"></a>Sales and Lettings</li>
+                  <li class="link-content grey"><a href="#"></a>Via our network of local and national estate agencies</li>
+                  <hr class="divider" id="dividerConnect">
+                </ul>
+                <ul>
+                  <li class="icon"><a href="#"><i class="fas fa-envelope"></i></a></li>
+                  <li class="link-content"><a href="#"></a>Sales and Lettings</li>
+                  <li class="link-content grey"><a href="#"></a>Via our network of local and national estate agencies</li>
+                </ul>
+            </div>
+          </div> 
+
 
       <!-- Mega menu footer -->  
 
@@ -89,5 +143,7 @@
       </div> 
     </div>
   </header>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
